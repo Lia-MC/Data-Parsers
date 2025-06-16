@@ -9,11 +9,15 @@ int loadfile(filename) {
         cerr << "Error opening the file!";
         return 1;
     }
+    
     string s;
 
     // read each line of the file, 
     // store it in string s
-    while (getline(f, s)) {
+    while (getline(f, s + len(alr_added))) { // some way to put the values without commas or arrays and stuff would be really nice... HOW ABOUT NODES!!!
+        // put some of it into the x value text
+        // skip over the space
+        // add a comma before the number if not the first iteration through the while loop + put the rest of it into the y value file
     }
 
     // Close the file
@@ -28,6 +32,8 @@ int loadfile(filename) {
 
 int main() {
     // i need to make sure that i can access string s, maybe i malloc it here, then pass it into load file
+
+    string filename = "samplesvals.txt";
 
     while (loadfile() != 0) {
         filename = ; // get user input
